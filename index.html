@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Web Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>Task- 3 Quiz Advanced Web Project</h1>
+  </header>
+
+  <main>
+    <!-- Responsive Layout Example -->
+    <section class="responsive-section">
+      <h2>Responsive Quiz Selector</h2>
+      <div class="grid">
+        <div class="box" onclick="startQuiz('js')">JavaScript Quiz</div>
+        <div class="box" onclick="startQuiz('py')">Python Quiz</div>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+      <h2 id="quizTitle">Quiz</h2>
+      <div id="quiz">
+        <p id="question">Loading...</p>
+        <div id="options"></div>
+        <button id="nextBtn">Next</button>
+        <p id="result"></p>
+      </div>
+    </section>
+
+    <!-- API Section -->
+    <section class="api-section">
+      <h2>Random Joke</h2>
+      <button id="loadJoke">Get Joke</button>
+      <p id="jokeText"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
